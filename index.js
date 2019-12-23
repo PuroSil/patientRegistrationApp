@@ -3,6 +3,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const dotenv = require('dotenv');
+const patientRoutes = require('./routes/patientRoutes');
 
 const app = express();
 const port = process.env.PORT || 8000;
@@ -38,7 +39,7 @@ mongoose.connect(dbUri,
     }
   });
 
-// app.use TODO
+app.use('/api', [patientRoutes]);
 
 app.listen(port, () => {
   console.log(`Server is running on port: ${port}`);

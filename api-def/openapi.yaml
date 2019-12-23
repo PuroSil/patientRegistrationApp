@@ -136,7 +136,6 @@ components:
         - postnumber
         - phone
         - socialSecurityNumber
-        - comment
       type: object
       properties:
         _id:
@@ -188,7 +187,6 @@ components:
               - postnumber
               - phone
               - socialSecurityNumber
-              - comment
             properties:
               firstName:
                 type: string

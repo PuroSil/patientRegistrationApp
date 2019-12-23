@@ -1,0 +1,22 @@
+{
+  "name": "patientregistrationapp",
+  "version": "1.0.0",
+  "description": "Application for registering patiens in home care",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PetraSil/patientRegistrationApp.git"
+  },
+  "keywords": [
+    "healthcare"
+  ],
+  "author": "Petra Silavuori",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PetraSil/patientRegistrationApp/issues"
+  },
+  "homepage": "https://github.com/PetraSil/patientRegistrationApp#readme"
+}

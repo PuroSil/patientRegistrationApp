@@ -1,7 +1,7 @@
 {
   "name": "patientregistrationapp",
   "version": "1.0.0",
-  "description": "Application for registering patiens in home care",
+  "description": "Application for registering and managing patiens in home nursing and care",
   "main": "index.js",
   "pre-commit": [
     "lint"

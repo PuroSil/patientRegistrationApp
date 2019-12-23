@@ -1,0 +1,208 @@
+openapi: 3.0.1
+info:
+  title: Patient registering and managing application
+  description: Patient registering and managing application for home nursing and care
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+  version: 0.0.1
+paths:
+  /getPatients:
+    get:
+      summary: gets all patients
+      description: |
+        A query that returns all patients in the database.
+      operationId: getPatients
+      responses:
+        200:
+          description: search results matching criteria
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Patient"
+        400:
+          description: Bad input parameter
+          content: {}
+  /getPatientsByName:
+    get:
+      summary: Searcher patients by name
+      description: |
+        By passing in the appropriate options, you can search for
+        patients by name.
+      operationId: getPatientsByName
+      parameters:
+        - name: firstName
+          in: query
+          description: pass first name to include in search
+          required: true
+          schema:
+            type: string
+            example: "qwerty"
+        - name: lastName
+          in: query
+          description: pass last name to include in search
+          required: true
+          schema:
+            type: string
+            example: "qwerty"
+      responses:
+        200:
+          description: search results matching criteria
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Patient"
+        400:
+          description: Bad input parameter
+          content: {}
+  /getSocialSecurityNumber:
+    get:
+      summary: searches patients with social security number
+      description: |
+        By passing in the appropriate options, you can search for
+        a patient with their social security number.
+      operationId: getSocialSecurityNumber
+      parameters:
+        - name: socialSecurityNumber
+          in: query
+          description: pass a social security number to be used in the query
+          required: true
+          schema:
+            type: string
+            example: "000000-0000"
+      responses:
+        200:
+          description: search results matching criteria
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Patient"
+        400:
+          description: bad input parameter
+          content: {}
+  /addPatient:
+    post:
+      summary: adds a patient
+      description: Adds a patient to the system
+      operationId: addPatient
+      requestBody:
+        $ref: "#/components/requestBodies/Patient"
+      responses:
+        201:
+          description: Patient successfully added
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Patient"
+        400:
+          description: bad input parameter
+          content: {}
+  /editPatient:
+    put:
+      summary: edits a patient
+      description: Edits a patient that is already in the system
+      operationId: editPatient
+      requestBody:
+        required: True
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Patient"
+      responses:
+        201:
+          description: succesful operation
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Patient"
+        400:
+          description: bad input parameter
+          content: {}
+components:
+  schemas:
+    Patient:
+      required:
+        - _id
+        - firstName
+        - lastName
+        - address
+        - city
+        - postnumber
+        - phone
+        - socialSecurityNumber
+        - comment
+      type: object
+      properties:
+        _id:
+          type: string
+          example: id
+        firstName:
+          type: string
+          example: Jane
+        lastName:
+          type: string
+          example: Doe
+        address:
+          type: string
+          example: Address
+        city:
+          type: string
+          example: City
+        postnumber: 
+          type: integer
+          format: int64
+          example: 00000
+          minLength: 5
+          maxLength: 5
+        phone:
+          type: integer
+          format: int64
+          example: 0000000000
+          minLength: 10
+          maxLength: 10
+        socialSecurityNumber:
+          type: string
+          example: 000000-0000
+        comment:
+          type: string
+          example: description
+  requestBodies:
+    Patient:
+      description: Adds a patient to the database
+      required: true
+      content:
+        application/json:
+          schema:
+            type: object
+            required:
+              - firstName
+              - lastName
+              - address
+              - city
+              - postnumber
+              - phone
+              - socialSecurityNumber
+              - comment
+            properties:
+              firstName:
+                type: string
+              lastName:
+                type: string
+              address:
+                type: string
+              city:
+                type: string
+              postnumber:
+                type: integer
+              phone:
+                type: integer
+              socialSecurityNumber:
+                type: string
+              comment:
+                type: string

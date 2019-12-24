@@ -7,7 +7,18 @@ const daoAddPatient = async (patient) => {
   return savedPatient;
 };
 
+const daoGetPatients = async () => {
+  const patients = await Patient.find({});
+  return patients;
+};
+
+const daoGetPatientsByName = async (firstName, lastName) => {
+  const patients = await Patient.find({ firstName, lastName });
+  return patients;
+};
 
 module.exports = {
   daoAddPatient,
+  daoGetPatients,
+  daoGetPatientsByName,
 };

@@ -3,7 +3,7 @@ import axios from 'axios';
 
 const App = () => {
 
-  const [patients, setPatients] = useState([]);
+  const [patients, setPatients] = useState();
 
   useEffect(() => {
     async function fetchData() {
@@ -20,6 +20,13 @@ const App = () => {
   console.log("patients: ", patients)
   return (
     <div className="App">
+      <ul>
+        {patients && patients.map(item => (
+          <li key={item._id}>
+            {item.firstName}
+          </li>
+      ))}
+    </ul>
     </div>
   );
 }

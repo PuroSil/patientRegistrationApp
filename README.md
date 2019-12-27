@@ -10,5 +10,6 @@
 - Mongoose
 - Express
 - Axios
+- Thunk
 - SASS
 - etc.

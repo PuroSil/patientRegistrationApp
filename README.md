@@ -2,6 +2,12 @@
 
 ## WORK IN PROGRESS
 
+## Live website to be announced
+
+## Design in progress
+https://www.figma.com/proto/tbUEgtBiydUUPjhHWrFJyp/PatientApp?node-id=1%3A59&scaling=contain
+
+## Part of the tech stack
 - Node.js
 - React
 - Redux

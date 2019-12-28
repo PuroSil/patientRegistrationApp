@@ -5,7 +5,6 @@ import Patients from './Patients';
 export * from './redux/patientActions';
 
 const App = () => {
-
   return (
     <Provider store={store}>
       <Patients />

@@ -7,7 +7,7 @@
 ## Design in progress
 https://www.figma.com/proto/tbUEgtBiydUUPjhHWrFJyp/PatientApp?node-id=1%3A59&scaling=contain
 
-## Part of the tech stack
+## Part of the tech stack used so far
 - Node.js
 - React
 - Redux

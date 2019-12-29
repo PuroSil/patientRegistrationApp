@@ -1,6 +1,7 @@
 # PATIENT REGISTRATION AND MANAGING APPLICATION
 
 ## WORK IN PROGRESS
+Due to my day job as a software developer this will progress in phases that depends on the time I have left after my job.
 
 ## Live website to be announced
 

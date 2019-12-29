@@ -1,19 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 import { fetchPatients } from './redux/patientActions';
 export * from './redux/patientActions';
-
-const mapStateToProps = state => {
-  return {
-    patientData: state.patient
-  }
-}
-
-const mapdDispatchToProps = dispatch => {
-  return {
-    fetchPatients: () => dispatch(fetchPatients())
-  }
-}
 
 const Patients = ({ patientData, fetchPatients}) => {
 
@@ -42,6 +31,23 @@ const Patients = ({ patientData, fetchPatients}) => {
       </div>
     </div>
   )
+}
+
+Patients.propTypes = {
+  fetchPatients: PropTypes.func.isRequired,
+  patientData: PropTypes.object.isRequired
+};
+
+const mapStateToProps = state => {
+  return {
+    patientData: state.patient
+  }
+}
+
+const mapdDispatchToProps = dispatch => {
+  return {
+    fetchPatients: () => dispatch(fetchPatients())
+  }
 }
 
 export default connect (

@@ -8,7 +8,7 @@ Due to my day job as a software developer this application will progress in phas
 ## Design in progress
 https://www.figma.com/proto/tbUEgtBiydUUPjhHWrFJyp/PatientApp?node-id=1%3A59&scaling=contain
 
-## Part of the tech stack used so far
+## Part of the tech stack used so far (CRUD app using MERN stack for the most parts)
 - Node.js
 - React
 - Redux

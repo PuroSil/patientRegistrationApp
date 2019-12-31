@@ -1,13 +1,19 @@
 // COLOURS
 $pure-white: rgb(255, 255, 255);
-$theme-cyan: rgb(7, 172, 219);
+$theme-cyan: rgb(8, 133, 168);
 $button-white: rgb(250, 250, 250);
 $text-white: rgb(224, 224, 244);
-$text-gray: rgb(200, 200, 200);
+$text-gray: rgb(134, 134, 134);
 $background-black: rgb(20, 20, 20);
 $hover-white: rgba(250, 250, 250, 0.5);
 
 //BREAKPOINTS
+@mixin breakpoint-xs() {
+	@media (max-width: 420px) {
+		@content;
+	}
+}
+
 @mixin breakpoint-small() {
 	@media (max-width: 900px) {
 		@content;
@@ -44,14 +50,14 @@ $size-ten: 10rem;
 	display: flex;
 	justify-content: $justify;
 	align-items: $align;
-	flex-direction: $direction;
+  flex-direction: $direction;
 }
 
 @mixin default-grid($justify: center, $align: center, $columns: 1fr 1fr) {
 	display: grid;
 	justify-items: $justify;
 	align-content: $align;
-	grid-template-columns: $columns;
+  grid-template-columns: $columns;
 }
 
 //ANIMATIONS

@@ -1,15 +1,6 @@
 .container {
   min-height: 100vh;
   position: relative;
-  padding: 4rem 0;
-  background-color: #141414;
-}
-
-@media (max-width: 900px) {
-  .container {
-    width: 80%;
-    margin: auto;
-  }
 }
 
 .container__flex {

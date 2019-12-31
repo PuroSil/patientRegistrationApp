@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { fetchPatients } from './redux/patientActions';
+import PatientBlock from './components/patientBlock/PatientBlock';
 export * from './redux/patientActions';
 
 const Patients = ({ patientData, fetchPatients}) => {
@@ -19,13 +20,19 @@ const Patients = ({ patientData, fetchPatients}) => {
       <h2>Patient List</h2>
       <div>
         {
-          patientData &&
           patientData.patients &&
           patientData.patients.map(
-            patient => 
-            <p>{
-              patient.firstName
-            }</p>
+            patient =>
+            <PatientBlock content={
+              <>
+                <h2>
+                { `${patient.firstName} ${patient.lastName}` }
+                </h2>
+                <h3>
+                { patient.socialSecurityNumber }
+                </h3>
+              </>
+            } />
           )
         }
       </div>

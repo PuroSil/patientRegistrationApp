@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/patientRegistrationApp/login/static/css/main.0d8efc16.chunk.css",
-    "main.js": "/patientRegistrationApp/login/static/js/main.34d37701.chunk.js",
-    "main.js.map": "/patientRegistrationApp/login/static/js/main.34d37701.chunk.js.map",
+    "main.js": "/patientRegistrationApp/login/static/js/main.c7cd0373.chunk.js",
+    "main.js.map": "/patientRegistrationApp/login/static/js/main.c7cd0373.chunk.js.map",
     "runtime-main.js": "/patientRegistrationApp/login/static/js/runtime-main.409e81fd.js",
     "runtime-main.js.map": "/patientRegistrationApp/login/static/js/runtime-main.409e81fd.js.map",
     "static/js/2.7e284099.chunk.js": "/patientRegistrationApp/login/static/js/2.7e284099.chunk.js",
     "static/js/2.7e284099.chunk.js.map": "/patientRegistrationApp/login/static/js/2.7e284099.chunk.js.map",
     "index.html": "/patientRegistrationApp/login/index.html",
-    "precache-manifest.446985cfbc20cb3b84e4f952b877718a.js": "/patientRegistrationApp/login/precache-manifest.446985cfbc20cb3b84e4f952b877718a.js",
+    "precache-manifest.f9be46acd6942da4e5987eafb6ad1244.js": "/patientRegistrationApp/login/precache-manifest.f9be46acd6942da4e5987eafb6ad1244.js",
     "service-worker.js": "/patientRegistrationApp/login/service-worker.js",
     "static/css/main.0d8efc16.chunk.css.map": "/patientRegistrationApp/login/static/css/main.0d8efc16.chunk.css.map",
     "static/js/2.7e284099.chunk.js.LICENSE": "/patientRegistrationApp/login/static/js/2.7e284099.chunk.js.LICENSE",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.409e81fd.js",
     "static/js/2.7e284099.chunk.js",
     "static/css/main.0d8efc16.chunk.css",
-    "static/js/main.34d37701.chunk.js"
+    "static/js/main.c7cd0373.chunk.js"
   ]
 }

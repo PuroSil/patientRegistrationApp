@@ -12,9 +12,9 @@ const App = () => {
     <Provider store={store}>
       <Router>
         <Switch>
-          <Login path="/" exact component={Login} />
-          <Home path="/home" component={Home} />
-          <Patients path="/patients" component={Patients}/>
+          <Route path="/" exact component={Login} />
+          <Route path="/home" component={Home} />
+          <Route path="/patients" component={Patients}/>
         </Switch>
       </Router>
     </Provider>

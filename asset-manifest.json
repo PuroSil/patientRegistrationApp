@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/patientRegistrationApp/static/css/main.e09431aa.chunk.css",
+    "main.js": "/patientRegistrationApp/static/js/main.34d37701.chunk.js",
+    "main.js.map": "/patientRegistrationApp/static/js/main.34d37701.chunk.js.map",
+    "runtime-main.js": "/patientRegistrationApp/static/js/runtime-main.30b4141f.js",
+    "runtime-main.js.map": "/patientRegistrationApp/static/js/runtime-main.30b4141f.js.map",
+    "static/js/2.7e284099.chunk.js": "/patientRegistrationApp/static/js/2.7e284099.chunk.js",
+    "static/js/2.7e284099.chunk.js.map": "/patientRegistrationApp/static/js/2.7e284099.chunk.js.map",
+    "index.html": "/patientRegistrationApp/index.html",
+    "precache-manifest.ad05690b2d543f058c7b0bfe724421d7.js": "/patientRegistrationApp/precache-manifest.ad05690b2d543f058c7b0bfe724421d7.js",
+    "service-worker.js": "/patientRegistrationApp/service-worker.js",
+    "static/css/main.e09431aa.chunk.css.map": "/patientRegistrationApp/static/css/main.e09431aa.chunk.css.map",
+    "static/js/2.7e284099.chunk.js.LICENSE": "/patientRegistrationApp/static/js/2.7e284099.chunk.js.LICENSE",
+    "static/media/login.css": "/patientRegistrationApp/static/media/pink-and-white-flowers-on-white-wall-2395249.1524bac3.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.30b4141f.js",
+    "static/js/2.7e284099.chunk.js",
+    "static/css/main.e09431aa.chunk.css",
+    "static/js/main.34d37701.chunk.js"
+  ]
+}

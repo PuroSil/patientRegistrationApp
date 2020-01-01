@@ -10,13 +10,11 @@ export * from './redux/patientActions';
 const App = () => {
   return (
     <Provider store={store}>
-      <Router>
-        <Switch>
-          <Route path="/" exact component={Login} />
-          <Route path="/home" component={Home} />
-          <Route path="/patients" component={Patients}/>
-        </Switch>
-      </Router>
+      <Switch>
+        <Route path="/" exact component={Login} />
+        <Route path="/home" component={Home} />
+        <Route path="/patients" component={Patients}/>
+      </Switch>
     </Provider>
   )
 }

@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/patientRegistrationApp/static/css/main.e09431aa.chunk.css",
-    "main.js": "/patientRegistrationApp/static/js/main.ae1e08e0.chunk.js",
-    "main.js.map": "/patientRegistrationApp/static/js/main.ae1e08e0.chunk.js.map",
+    "main.js": "/patientRegistrationApp/static/js/main.71ffcbce.chunk.js",
+    "main.js.map": "/patientRegistrationApp/static/js/main.71ffcbce.chunk.js.map",
     "runtime-main.js": "/patientRegistrationApp/static/js/runtime-main.30b4141f.js",
     "runtime-main.js.map": "/patientRegistrationApp/static/js/runtime-main.30b4141f.js.map",
-    "static/js/2.4371c128.chunk.js": "/patientRegistrationApp/static/js/2.4371c128.chunk.js",
-    "static/js/2.4371c128.chunk.js.map": "/patientRegistrationApp/static/js/2.4371c128.chunk.js.map",
+    "static/js/2.0e7fb3a1.chunk.js": "/patientRegistrationApp/static/js/2.0e7fb3a1.chunk.js",
+    "static/js/2.0e7fb3a1.chunk.js.map": "/patientRegistrationApp/static/js/2.0e7fb3a1.chunk.js.map",
     "index.html": "/patientRegistrationApp/index.html",
-    "precache-manifest.b131ca4c2c2a5b35de200849cd3bcee6.js": "/patientRegistrationApp/precache-manifest.b131ca4c2c2a5b35de200849cd3bcee6.js",
+    "precache-manifest.451293b9485ea85fe0148fad9328992a.js": "/patientRegistrationApp/precache-manifest.451293b9485ea85fe0148fad9328992a.js",
     "service-worker.js": "/patientRegistrationApp/service-worker.js",
     "static/css/main.e09431aa.chunk.css.map": "/patientRegistrationApp/static/css/main.e09431aa.chunk.css.map",
-    "static/js/2.4371c128.chunk.js.LICENSE": "/patientRegistrationApp/static/js/2.4371c128.chunk.js.LICENSE",
+    "static/js/2.0e7fb3a1.chunk.js.LICENSE": "/patientRegistrationApp/static/js/2.0e7fb3a1.chunk.js.LICENSE",
     "static/media/login.css": "/patientRegistrationApp/static/media/pink-and-white-flowers-on-white-wall-2395249.1524bac3.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.30b4141f.js",
-    "static/js/2.4371c128.chunk.js",
+    "static/js/2.0e7fb3a1.chunk.js",
     "static/css/main.e09431aa.chunk.css",
-    "static/js/main.ae1e08e0.chunk.js"
+    "static/js/main.71ffcbce.chunk.js"
   ]
 }

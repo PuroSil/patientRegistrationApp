@@ -43,10 +43,14 @@ const Patient = new mongoose.Schema({
     type: String,
     default: 123456 - 7890,
   },
-  comment: {
+  contactPerson: {
     type: String,
-    default: '',
+    default: 'None',
   },
+  contactPersonPhone: {
+    type: Number,
+    default: null
+  }
 });
 
 module.exports = mongoose.model('Patient', Patient);

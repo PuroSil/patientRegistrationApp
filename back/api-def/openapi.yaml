@@ -136,6 +136,8 @@ components:
         - postnumber
         - phone
         - socialSecurityNumber
+        - contactPerson
+        - contactPersonPhone
       type: object
       properties:
         _id:
@@ -168,9 +170,12 @@ components:
         socialSecurityNumber:
           type: string
           example: 000000-0000
-        comment:
+        contactPerson:
           type: string
-          example: description
+          example: name
+        contactPersonPhone:
+          type: integer
+          format: int64
   requestBodies:
     Patient:
       description: Adds a patient to the database
@@ -187,6 +192,8 @@ components:
               - postnumber
               - phone
               - socialSecurityNumber
+              - contactPerson
+              - contactPersonPhone
             properties:
               firstName:
                 type: string
@@ -202,5 +209,7 @@ components:
                 type: integer
               socialSecurityNumber:
                 type: string
-              comment:
+              contactPerson:
                 type: string
+              contactPersonPhone:
+                type: integer

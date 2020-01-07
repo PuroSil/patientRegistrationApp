@@ -1,7 +1,7 @@
 # PATIENT REGISTRATION AND MANAGING APPLICATION
 
 ## WORK IN PROGRESS
-Due to my day job as a software developer this application will progress in phases that depends on the time I have left after my job.
+Due to my day job as a software developer this microservices application will progress in phases that depend on the time I have left after my job.
 
 ## Live website in progress
 https://petrasil.github.io/patientRegistrationApp/

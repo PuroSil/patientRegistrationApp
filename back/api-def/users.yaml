@@ -1,0 +1,94 @@
+openapi: 3.0.1
+info:
+  title: Patient registering and managing application
+  description: Patient registering and managing application for home nursing and care
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+  version: 0.0.1
+paths:
+  /getUser:
+    get:
+      summary: Searcher user by name
+      description: |
+        By passing in the appropriate information, you can search for
+        a user by name.
+      operationId: getUser
+      parameters:
+        - name: username
+          in: query
+          description: pass username to include in search
+          required: true
+          schema:
+            type: string
+            example: "qwerty"
+        - name: password
+          in: query
+          description: pass password to include in search
+          required: true
+          schema:
+            type: string
+            example: "qwerty"
+      responses:
+        200:
+          description: search results matching criteria
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/User"
+        400:
+          description: Bad input parameter
+          content: {}
+  /addUser:
+    post:
+      summary: adds a user
+      description: Adds a user to the system
+      operationId: addUser
+      requestBody:
+        $ref: "#/components/requestBodies/User"
+      responses:
+        201:
+          description: User successfully added
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/User"
+        400:
+          description: bad input parameter
+          content: {}
+components:
+  schemas:
+    User:
+      required:
+        - _id
+        - username
+        - password
+      type: object
+      properties:
+        _id:
+          type: string
+          example: id
+        username:
+          type: string
+          example: Jane
+        password:
+          type: string
+          example: password
+  requestBodies:
+    User:
+      description: Adds a user to the database
+      required: true
+      content:
+        application/json:
+          schema:
+            type: object
+            required:
+              - username
+              - password
+            properties:
+              username:
+                type: string
+              password:
+                type: string

@@ -1,4 +1,3 @@
-/* eslint-disable linebreak-style */
 const Patient = require('../models/Patient');
 
 const daoAddPatient = async (patient) => {
@@ -20,5 +19,5 @@ const daoGetPatientsByName = async (firstName, lastName) => {
 module.exports = {
   daoAddPatient,
   daoGetPatients,
-  daoGetPatientsByName,
+  daoGetPatientsByName
 };
